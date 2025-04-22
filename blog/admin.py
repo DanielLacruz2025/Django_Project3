@@ -7,4 +7,4 @@ class PublicationAdmin(admin.ModelAdmin):
     search_fields = ("title", "author__username")
     list_filter = ("author", "author__username")
 
-    admin.site.register(Publication,)
+admin.site.register(Publication,PublicationAdmin)
